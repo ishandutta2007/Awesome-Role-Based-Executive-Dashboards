@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Role-Based-Executive-Dashboards/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Role-Based-Executive-Dashboards?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Role-Based-Executive-Dashboards/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Role-Based-Executive-Dashboards?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Role-Based-Executive-Dashboards/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Role-Based-Executive-Dashboards?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Role-Based-Executive-Dashboards/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square" alt="License: CC0 1.0" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -31,7 +31,7 @@
   - [SaaS Platforms Feature & Pricing Matrix](#-saas-platforms-feature--pricing-matrix)
   - [Platform Deep Dives](#-platform-deep-dives)
 - [🟩 Open-Source Software](#-open-source-software)
-  - [Open-Source Solutions by Star Count](#-open-source-solutions-by-star-count)
+  - [Open-Source Solutions by Stars_Count](#-open-source-solutions-by-star-count)
   - [Open-Source Deep Dives](#-open-source-deep-dives)
 - [📊 Enterprise Architecture Comparison](#-enterprise-architecture-comparison)
 - [📈 Star History](#-star-history)
@@ -124,11 +124,11 @@ Commercial, cloud-hosted executive reporting and role-based business intelligenc
 
 Self-hosted, transparent, and community-driven analytics platforms. These open-source solutions range from full-fledged BI platforms with native Row-Level Security (RLS) to code-first semantic engines and developer-friendly dashboard frameworks.
 
-### ⭐ Open-Source Solutions by Star Count
+### ⭐ Open-Source Solutions by Stars_Count
 
-*The table below is sorted descending by GitHub Star Count.*
+*The table below is sorted descending by GitHub Stars_Count.*
 
-| 📦 Repository | 🌟 GitHub Stars | 🏷️ License | 🛠️ Tech Stack | 🛡️ Role-Based Access Control (RBAC) & Security |
+| 📦 Repository | 🌟 GitHub_Stars | 🏷️ License | 🛠️ Tech Stack | 🛡️ Role-Based Access Control (RBAC) & Security |
 |:---|:---:|:---|:---|:---|
 | **[Apache Superset](https://github.com/apache/superset)** | [![Stars](https://img.shields.io/github/stars/apache/superset?style=social&color=white)](https://github.com/apache/superset/stargazers) | Apache-2.0 | Python / Flask / React | Granular roles & permissions, native dataset Row-Level Security (RLS), OAuth/OIDC/SAML |
 | **[Metabase](https://github.com/metabase/metabase)** | [![Stars](https://img.shields.io/github/stars/metabase/metabase?style=social&color=white)](https://github.com/metabase/metabase/stargazers) | AGPL-3.0 | Clojure / React | User groups & collection permissions; row-level data sandboxing in Pro/Enterprise editions |

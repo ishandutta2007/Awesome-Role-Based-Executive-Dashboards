@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#0a0f1d; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primary-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.7" />
+    </linearGradient>
+
+    <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <linearGradient id="area-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.0" />
+    </linearGradient>
+
+    <filter id="glow-effect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <style>
+      .pulse-beacon {
+        animation: pulseAnim 3s infinite ease-in-out;
+      }
+      .dash-flow {
+        stroke-dasharray: 8, 8;
+        animation: dashMove 25s linear infinite;
+      }
+      .float-card-1 {
+        animation: float1 6s ease-in-out infinite alternate;
+      }
+      .float-card-2 {
+        animation: float2 7s ease-in-out infinite alternate;
+      }
+      .chart-pulse {
+        animation: chartPulse 4s ease-in-out infinite alternate;
+      }
+      @keyframes dashMove {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -400; }
+      }
+      @keyframes pulseAnim {
+        0%, 100% { opacity: 0.2; transform: scale(0.98); }
+        50% { opacity: 0.5; transform: scale(1.02); }
+      }
+      @keyframes float1 {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-8px); }
+      }
+      @keyframes float2 {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(8px); }
+      }
+      @keyframes chartPulse {
+        0% { opacity: 0.7; }
+        100% { opacity: 1; filter: drop-shadow(0 0 6px #38bdf8); }
+      }
+    </style>
+  </defs>
+
+  <!-- Deep Background Layer -->
+  <rect width="1200" height="360" fill="url(#bg-grad)" />
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="200" cy="80" r="140" fill="#38bdf8" opacity="0.08" filter="url(#glow-effect)" class="pulse-beacon" />
+  <circle cx="1050" cy="180" r="160" fill="#818cf8" opacity="0.1" filter="url(#glow-effect)" class="pulse-beacon" />
+
+  <!-- Subtle Dynamic Grid Pattern -->
+  <g stroke="#334155" stroke-width="0.5" opacity="0.25">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="360" />
+    <line x1="300" y1="0" x2="300" y2="360" />
+    <line x1="450" y1="0" x2="450" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="750" y1="0" x2="750" y2="360" />
+    <line x1="900" y1="0" x2="900" y2="360" />
+    <line x1="1050" y1="0" x2="1050" y2="360" />
+  </g>
+
+  <!-- Dynamic Connecting Data Circuit (Behind Content) -->
+  <path d="M 50,180 Q 250,90 450,160 T 800,120 T 1150,220" fill="none" stroke="#4f46e5" stroke-width="1.5" opacity="0.4" class="dash-flow" />
+
+  <!-- RIGHT BACKGROUND: Floating Role-Based Dashboard Cards & Visual Elements -->
+  <!-- Floating Dashboard Card 1: Executive KPI Metrics (stays neatly on right side) -->
+  <g class="float-card-1" transform="translate(820, 45)">
+    <!-- Card Backing -->
+    <rect width="320" height="135" rx="12" fill="url(#card-grad)" stroke="#334155" stroke-width="1" />
+    <rect width="320" height="30" rx="12" fill="#1e293b" opacity="0.6" />
+    <circle cx="20" cy="15" r="4" fill="#ef4444" />
+    <circle cx="34" cy="15" r="4" fill="#f59e0b" />
+    <circle cx="48" cy="15" r="4" fill="#10b981" />
+    <text x="65" y="19" fill="#94a3b8" font-size="11" font-weight="600">Executive Summary • Live KPIs</text>
+    
+    <!-- Mini KPI 1 -->
+    <text x="20" y="55" fill="#64748b" font-size="10" font-weight="500">ARR REVENUE</text>
+    <text x="20" y="78" fill="#f8fafc" font-size="20" font-weight="700">$24.8M</text>
+    <text x="95" y="77" fill="#10b981" font-size="11" font-weight="600">+18.4% ↑</text>
+    
+    <!-- Mini KPI 2 -->
+    <text x="175" y="55" fill="#64748b" font-size="10" font-weight="500">NET RETENTION</text>
+    <text x="175" y="78" fill="#f8fafc" font-size="20" font-weight="700">118%</text>
+    <text x="240" y="77" fill="#38bdf8" font-size="11" font-weight="600">RLS Active</text>
+
+    <!-- Mini Trend Sparkline -->
+    <path d="M 20,118 Q 60,95 100,105 T 180,92 T 260,110 T 300,85" fill="none" stroke="url(#line-grad)" stroke-width="2.5" class="chart-pulse" />
+  </g>
+
+  <!-- Floating Dashboard Card 2: Role Access / RBAC Security Matrix -->
+  <g class="float-card-2" transform="translate(850, 195)">
+    <rect width="290" height="120" rx="12" fill="url(#card-grad)" stroke="#334155" stroke-width="1" />
+    <text x="18" y="26" fill="#94a3b8" font-size="11" font-weight="600">Role-Based Access Matrix (RBAC)</text>
+    
+    <!-- Role Row 1: Executive / C-Suite -->
+    <rect x="18" y="38" width="75" height="20" rx="6" fill="#38bdf8" fill-opacity="0.2" />
+    <text x="26" y="52" fill="#38bdf8" font-size="10" font-weight="600">👑 C-Suite</text>
+    <text x="105" y="52" fill="#cbd5e1" font-size="11">Company-wide High-Level KPIs</text>
+
+    <!-- Role Row 2: Department Head -->
+    <rect x="18" y="65" width="80" height="20" rx="6" fill="#818cf8" fill-opacity="0.2" />
+    <text x="26" y="79" fill="#818cf8" font-size="10" font-weight="600">👔 VP / Lead</text>
+    <text x="110" y="79" fill="#cbd5e1" font-size="11">Department Scoped Filter (RLS)</text>
+
+    <!-- Role Row 3: Operations / User -->
+    <rect x="18" y="92" width="75" height="20" rx="6" fill="#34d399" fill-opacity="0.2" />
+    <text x="26" y="106" fill="#34d399" font-size="10" font-weight="600">⚙️ Operations</text>
+    <text x="105" y="106" fill="#cbd5e1" font-size="11">Granular Transaction Drilldown</text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Header, Badges, Title & Subtitles (Always Crisp and Uncovered) -->
+  <g transform="translate(60, 0)">
+    <!-- Top Decorative Badge -->
+    <g transform="translate(0, 52)">
+      <rect width="280" height="28" rx="14" fill="#1e293b" stroke="#3b82f6" stroke-width="1" />
+      <circle cx="14" cy="14" r="5" fill="#10b981" />
+      <text x="28" y="18" fill="#e2e8f0" font-size="11" font-weight="600" letter-spacing="0.5">CURATED ENTERPRISE BI DIRECTORY</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="132" fill="#ffffff" font-size="38" font-weight="900" letter-spacing="-1">
+      Awesome Role-Based
+    </text>
+    <text x="0" y="180" fill="url(#primary-glow)" font-size="38" font-weight="900" letter-spacing="-1">
+      Executive Dashboards
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="222" fill="#94a3b8" font-size="16" font-weight="400">
+      Enterprise Business Intelligence, RBAC Portals &amp; Row-Level Security Dashboards
+    </text>
+
+    <!-- Feature Pills / Highlights -->
+    <g transform="translate(0, 252)">
+      <!-- Pill 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="145" height="32" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1" />
+        <text x="12" y="20" fill="#38bdf8" font-size="12" font-weight="600">📊 SaaS Solutions</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(155, 0)">
+        <rect width="180" height="32" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1" />
+        <text x="12" y="20" fill="#818cf8" font-size="12" font-weight="600">🔓 Open-Source BI &amp; RLS</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(345, 0)">
+        <rect width="165" height="32" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1" />
+        <text x="12" y="20" fill="#34d399" font-size="12" font-weight="600">🛡️ Row-Level Security</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(520, 0)">
+        <rect width="155" height="32" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1" />
+        <text x="12" y="20" fill="#f59e0b" font-size="12" font-weight="600">💡 Transparent Pricing</text>
+      </g>
+    </g>
+
+    <!-- Bottom Tech Sub-bar -->
+    <text x="0" y="325" fill="#64748b" font-size="12" font-weight="500">
+      Includes Tableau, Power BI, Looker, Apache Superset, Metabase, Cube, Lightdash, Redash, and more.
+    </text>
+  </g>
+</svg>

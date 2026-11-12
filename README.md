@@ -126,7 +126,7 @@ Self-hosted, transparent, and community-driven analytics platforms. These open-s
 
 ### ⭐ Open-Source Solutions by Stars_Count
 
-*The table below is sorted descending by GitHub Stars_Count.*
+*The table below is sorted descending by GitHub_Stars_Count.*
 
 | 📦 Repository | 🌟 GitHub_Stars | 🏷️ License | 🛠️ Tech Stack | 🛡️ Role-Based Access Control (RBAC) & Security |
 |:---|:---:|:---|:---|:---|
